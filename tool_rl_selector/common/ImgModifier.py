@@ -352,8 +352,7 @@ class ImgModifier(object):
         outimg = img
         return outimg
 
-    #https://stackoverflow.com/questions/46390779/automatic-white-balancing-with-grayworld-assumption/46391574
-    # grayworld assuption, basic white-balcne method.(von kries algorithm)
+
     def white_balance(self, img):
         assert type(img) == np.ndarray
         img_lab = cv2.cvtColor(img, cv2.COLOR_RGB2LAB)
